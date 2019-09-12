@@ -6,9 +6,19 @@ pipeline {
         }
     }
     stages {
-        stage('Build') { 
+        stage('Prep') { 
             steps {
                 sh 'yarn install' 
+            }
+        }
+        stage('Build') {
+            steps {
+                'yarn build'
+            }
+        }
+        stage('Deploy'){
+            steps{
+                'yarn start'
             }
         }
     }
