@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 // create react component
 const App = function() {
-  return <div>Hi there</div>;
+  return <div>Hi theres</div>;
 };
 
 // take component and show it
